@@ -1,0 +1,69 @@
+import java.util.Scanner;
+/**
+ * Calculates the volume of a cube, cylinder, cone, and pyramid.
+ *
+ * @author Casey Cook
+ *
+ */
+public class VolumeCalculator
+{
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args)
+	
+	{   // Initialize variables
+		final double PI = 3.14159;
+		int cubeSide, coneRadius, coneHeight, pyramidBase, pyramidHeight,
+		cylinderRadius, cylinderHeight;
+		double cubeVolume, coneVolume, pyramidVolume, cylinderVolume;
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Enter all mesurements in centimeters as integers.\n");
+		
+		//Prompts user for cube side and calculates cube volume.
+		System.out.print("Enter side of the cube: ");
+		cubeSide = keyboard.nextInt();
+		cubeVolume = Math.pow(cubeSide, 3);
+		
+		System.out.printf("The volume of a cube with side %d is "
+				+ "%1.2f cubic centimeters.%n%n", cubeSide, cubeVolume);
+		
+		//Prompts user for cone radius and cone height and calculates cone volume.
+		System.out.print("Enter radius of the cone: ");
+		coneRadius = keyboard.nextInt();
+		
+		System.out.print("Enter height of the cone: ");
+		coneHeight = keyboard.nextInt(); 
+		
+		coneVolume = PI * Math.pow(coneRadius, 2) * coneHeight / 3;
+		System.out.printf("The volume of a cone with radius %d and height %d"
+				+ " is %1.2f cubic centimeters%n%n",coneRadius, coneHeight, coneVolume);
+		
+		//Prompts user for pyramid base and height and calculates pyramid volume.
+		System.out.print("Enter base of the pyramid: ");
+		pyramidBase = keyboard.nextInt();
+		
+		System.out.print("Enter height of the pyramid: ");
+		pyramidHeight = keyboard.nextInt(); 
+		
+		pyramidVolume = Math.pow(pyramidBase, 2) * pyramidHeight / 3;
+		System.out.printf("The volume of a pyramid with base %d and height %d"
+				+ " is %1.2f cubic centimeters%n%n",
+				pyramidBase, pyramidHeight, pyramidVolume);
+		
+		//Prompts user for cylinder radius and height and calculates cylinder volume.
+		System.out.print("Enter radius of the cylinder: ");
+		cylinderRadius = keyboard.nextInt();
+		
+		System.out.print("Enter height of the cylinder: ");
+		cylinderHeight = keyboard.nextInt(); 
+		
+		cylinderVolume = PI * Math.pow(cylinderRadius, 2) * cylinderHeight;
+		System.out.printf("The volume of a cylinder with radius %d and height %d"
+				+ " is %1.2f cubic centimeters%n%n",
+				cylinderRadius, cylinderHeight, cylinderVolume);
+	}
+
+}
