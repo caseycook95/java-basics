@@ -1,5 +1,5 @@
 # java-basics
-  This VolumeCalculator class shows many basic concepts in the java programming language. This program calculates the volume of a cube, cylinder, cone, and pyramid. 
+  This VolumeCalculator class shows many basic concepts in the java programming language. This program calculates the volume of a cube, cylinder, cone, and pyramid.
   
   The program takes in user input using the Scanner class. This allows for the program to take in keyboard input. A Scanner object is created to allow the programmer to take in keyboard input of many different data types. The only datatype that is taken is integer type data. The data is assigned to a variable with an integer data type. This allows the integer data to be manipulated with mathematics or with the Math class functions. 
   
